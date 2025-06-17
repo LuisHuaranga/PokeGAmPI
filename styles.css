@@ -1,0 +1,74 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fondo oscuro y tipografía clara */
+body {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  text-align: center;
+  width: 320px;
+  background: #3b3b3b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #ffcc00;
+  color: #2a2a2a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search button:hover {
+  background: #e6b800;
+}
+
+.result img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: none; /* se muestra sólo cuando hay imagen */
+  margin: 0 auto 10px;
+}
+
+.result p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
