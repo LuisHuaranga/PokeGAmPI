@@ -68,7 +68,23 @@ h1 {
   margin: 0 auto 10px;
 }
 
+/* … (el resto igual) … */
+
 .result p {
   font-size: 1.2rem;
   text-transform: capitalize;
+  margin: 0.5rem 0;
 }
+
+/* estilo específico para la descripción */
+#pokeDesc {
+  font-size: 1rem;
+  text-transform: none;
+  line-height: 1.4;
+  max-height: 6em;
+  overflow: hidden;
+  text-align: justify;
+  color: #ddd;
+}
+
+
